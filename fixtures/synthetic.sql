@@ -1,0 +1,126 @@
+BEGIN TRANSACTION;
+CREATE TABLE collection_coverage (
+    attempt_id INTEGER PRIMARY KEY,
+    provider TEXT NOT NULL,
+    underlying_symbol TEXT NOT NULL,
+    observation_date TEXT NOT NULL,
+    status TEXT NOT NULL CHECK(status IN ('complete','unknown','incomplete','failed'))
+);
+INSERT INTO "collection_coverage" VALUES(1,'synthetic_alpha','SYNTH_ORBIT','2040-01-01','complete');
+INSERT INTO "collection_coverage" VALUES(2,'synthetic_alpha','SYNTH_ORBIT','2040-01-02','complete');
+INSERT INTO "collection_coverage" VALUES(3,'synthetic_alpha','SYNTH_ORBIT','2040-01-03','complete');
+INSERT INTO "collection_coverage" VALUES(4,'synthetic_alpha','SYNTH_ORBIT','2040-01-04','complete');
+INSERT INTO "collection_coverage" VALUES(5,'synthetic_alpha','SYNTH_ORBIT','2040-01-05','complete');
+INSERT INTO "collection_coverage" VALUES(6,'synthetic_alpha','SYNTH_ORBIT','2040-01-06','complete');
+INSERT INTO "collection_coverage" VALUES(7,'synthetic_alpha','SYNTH_ORBIT','2040-01-07','complete');
+INSERT INTO "collection_coverage" VALUES(8,'synthetic_alpha','SYNTH_ORBIT','2040-01-08','complete');
+INSERT INTO "collection_coverage" VALUES(9,'synthetic_alpha','SYNTH_ORBIT','2040-01-09','complete');
+INSERT INTO "collection_coverage" VALUES(10,'synthetic_alpha','SYNTH_ORBIT','2040-01-10','complete');
+INSERT INTO "collection_coverage" VALUES(11,'synthetic_alpha','SYNTH_ORBIT','2040-01-11','complete');
+INSERT INTO "collection_coverage" VALUES(12,'synthetic_alpha','SYNTH_ORBIT','2040-01-12','complete');
+INSERT INTO "collection_coverage" VALUES(13,'synthetic_alpha','SYNTH_ORBIT','2040-01-13','complete');
+INSERT INTO "collection_coverage" VALUES(14,'synthetic_alpha','SYNTH_ORBIT','2040-01-14','complete');
+INSERT INTO "collection_coverage" VALUES(15,'synthetic_alpha','SYNTH_ORBIT','2040-01-15','complete');
+INSERT INTO "collection_coverage" VALUES(16,'synthetic_alpha','SYNTH_ORBIT','2040-01-16','complete');
+INSERT INTO "collection_coverage" VALUES(17,'synthetic_alpha','SYNTH_ORBIT','2040-01-17','complete');
+INSERT INTO "collection_coverage" VALUES(18,'synthetic_alpha','SYNTH_ORBIT','2040-01-18','complete');
+INSERT INTO "collection_coverage" VALUES(19,'synthetic_alpha','SYNTH_ORBIT','2040-01-19','complete');
+INSERT INTO "collection_coverage" VALUES(20,'synthetic_alpha','SYNTH_ORBIT','2040-01-20','complete');
+INSERT INTO "collection_coverage" VALUES(21,'synthetic_alpha','SYNTH_ORBIT','2040-01-21','complete');
+INSERT INTO "collection_coverage" VALUES(22,'synthetic_alpha','SYNTH_ORBIT','2040-01-22','complete');
+INSERT INTO "collection_coverage" VALUES(23,'synthetic_alpha','SYNTH_ORBIT','2040-01-23','complete');
+INSERT INTO "collection_coverage" VALUES(24,'synthetic_alpha','SYNTH_ORBIT','2040-01-24','complete');
+INSERT INTO "collection_coverage" VALUES(25,'synthetic_alpha','SYNTH_ORBIT','2040-01-25','complete');
+INSERT INTO "collection_coverage" VALUES(26,'synthetic_alpha','SYNTH_ORBIT','2040-01-26','complete');
+INSERT INTO "collection_coverage" VALUES(27,'synthetic_alpha','SYNTH_ORBIT','2040-01-27','complete');
+INSERT INTO "collection_coverage" VALUES(28,'synthetic_alpha','SYNTH_ORBIT','2040-01-28','complete');
+INSERT INTO "collection_coverage" VALUES(29,'synthetic_alpha','SYNTH_ORBIT','2040-01-29','complete');
+INSERT INTO "collection_coverage" VALUES(30,'synthetic_alpha','SYNTH_ORBIT','2040-01-30','complete');
+INSERT INTO "collection_coverage" VALUES(31,'synthetic_alpha','SYNTH_ORBIT','2040-01-31','complete');
+INSERT INTO "collection_coverage" VALUES(32,'synthetic_alpha','SYNTH_ORBIT','2040-02-01','complete');
+INSERT INTO "collection_coverage" VALUES(33,'synthetic_alpha','SYNTH_ORBIT','2040-02-02','complete');
+INSERT INTO "collection_coverage" VALUES(34,'synthetic_alpha','SYNTH_ORBIT','2040-02-03','complete');
+INSERT INTO "collection_coverage" VALUES(35,'synthetic_alpha','SYNTH_ORBIT','2040-02-04','complete');
+INSERT INTO "collection_coverage" VALUES(36,'synthetic_alpha','SYNTH_ORBIT','2040-02-05','complete');
+INSERT INTO "collection_coverage" VALUES(37,'synthetic_alpha','SYNTH_ORBIT','2040-02-06','complete');
+INSERT INTO "collection_coverage" VALUES(38,'synthetic_alpha','SYNTH_ORBIT','2040-02-07','complete');
+INSERT INTO "collection_coverage" VALUES(39,'synthetic_alpha','SYNTH_ORBIT','2040-02-08','complete');
+INSERT INTO "collection_coverage" VALUES(40,'synthetic_alpha','SYNTH_ORBIT','2040-02-09','complete');
+INSERT INTO "collection_coverage" VALUES(41,'synthetic_alpha','SYNTH_ORBIT','2040-02-10','complete');
+INSERT INTO "collection_coverage" VALUES(42,'synthetic_alpha','SYNTH_ORBIT','2040-02-11','complete');
+INSERT INTO "collection_coverage" VALUES(43,'synthetic_alpha','SYNTH_ORBIT','2040-02-12','complete');
+INSERT INTO "collection_coverage" VALUES(44,'synthetic_alpha','SYNTH_ORBIT','2040-02-13','complete');
+INSERT INTO "collection_coverage" VALUES(45,'synthetic_alpha','SYNTH_ORBIT','2040-02-14','complete');
+INSERT INTO "collection_coverage" VALUES(46,'synthetic_alpha','SYNTH_ORBIT','2040-02-15','complete');
+INSERT INTO "collection_coverage" VALUES(47,'synthetic_alpha','SYNTH_ORBIT','2040-02-16','complete');
+INSERT INTO "collection_coverage" VALUES(48,'synthetic_alpha','SYNTH_ORBIT','2040-02-17','complete');
+INSERT INTO "collection_coverage" VALUES(49,'synthetic_alpha','SYNTH_ORBIT','2040-02-18','complete');
+INSERT INTO "collection_coverage" VALUES(50,'synthetic_alpha','SYNTH_ORBIT','2040-02-19','complete');
+INSERT INTO "collection_coverage" VALUES(51,'synthetic_alpha','SYNTH_ORBIT','2040-02-20','complete');
+INSERT INTO "collection_coverage" VALUES(52,'synthetic_alpha','SYNTH_ORBIT','2040-02-21','complete');
+INSERT INTO "collection_coverage" VALUES(53,'synthetic_alpha','SYNTH_ORBIT','2040-02-22','complete');
+INSERT INTO "collection_coverage" VALUES(54,'synthetic_alpha','SYNTH_ORBIT','2040-02-23','complete');
+INSERT INTO "collection_coverage" VALUES(55,'synthetic_alpha','SYNTH_ORBIT','2040-02-24','complete');
+INSERT INTO "collection_coverage" VALUES(56,'synthetic_alpha','SYNTH_ORBIT','2040-02-25','complete');
+INSERT INTO "collection_coverage" VALUES(57,'synthetic_alpha','SYNTH_ORBIT','2040-02-26','complete');
+INSERT INTO "collection_coverage" VALUES(58,'synthetic_alpha','SYNTH_ORBIT','2040-02-27','complete');
+INSERT INTO "collection_coverage" VALUES(59,'synthetic_alpha','SYNTH_ORBIT','2040-02-28','complete');
+INSERT INTO "collection_coverage" VALUES(60,'synthetic_alpha','SYNTH_ORBIT','2040-02-29','complete');
+CREATE TABLE option_events (
+    event_id TEXT PRIMARY KEY,
+    provider TEXT NOT NULL,
+    underlying_symbol TEXT NOT NULL,
+    observation_date TEXT NOT NULL,
+    option_type TEXT NOT NULL CHECK(option_type IN ('CALL','PUT')),
+    premium REAL NOT NULL CHECK(premium >= 0),
+    volume INTEGER NOT NULL CHECK(volume >= 0)
+);
+INSERT INTO "option_events" VALUES('0','synthetic_alpha','SYNTH_ORBIT','2040-01-02','CALL',20.0,2);
+INSERT INTO "option_events" VALUES('1','synthetic_alpha','SYNTH_ORBIT','2040-01-03','PUT',30.0,2);
+INSERT INTO "option_events" VALUES('2','synthetic_alpha','SYNTH_ORBIT','2040-01-04','CALL',40.0,2);
+INSERT INTO "option_events" VALUES('3','synthetic_alpha','SYNTH_ORBIT','2040-01-05','PUT',50.0,2);
+INSERT INTO "option_events" VALUES('4','synthetic_alpha','SYNTH_ORBIT','2040-01-07','PUT',70.0,2);
+INSERT INTO "option_events" VALUES('5','synthetic_alpha','SYNTH_ORBIT','2040-01-08','CALL',80.0,2);
+INSERT INTO "option_events" VALUES('6','synthetic_alpha','SYNTH_ORBIT','2040-01-09','PUT',90.0,2);
+INSERT INTO "option_events" VALUES('7','synthetic_alpha','SYNTH_ORBIT','2040-01-10','CALL',100.0,2);
+INSERT INTO "option_events" VALUES('8','synthetic_alpha','SYNTH_ORBIT','2040-01-12','CALL',120.0,2);
+INSERT INTO "option_events" VALUES('9','synthetic_alpha','SYNTH_ORBIT','2040-01-13','PUT',130.0,2);
+INSERT INTO "option_events" VALUES('10','synthetic_alpha','SYNTH_ORBIT','2040-01-14','CALL',140.0,2);
+INSERT INTO "option_events" VALUES('11','synthetic_alpha','SYNTH_ORBIT','2040-01-15','PUT',150.0,2);
+INSERT INTO "option_events" VALUES('12','synthetic_alpha','SYNTH_ORBIT','2040-01-17','PUT',170.0,2);
+INSERT INTO "option_events" VALUES('13','synthetic_alpha','SYNTH_ORBIT','2040-01-18','CALL',180.0,2);
+INSERT INTO "option_events" VALUES('14','synthetic_alpha','SYNTH_ORBIT','2040-01-19','PUT',190.0,2);
+INSERT INTO "option_events" VALUES('15','synthetic_alpha','SYNTH_ORBIT','2040-01-20','CALL',200.0,2);
+INSERT INTO "option_events" VALUES('16','synthetic_alpha','SYNTH_ORBIT','2040-01-22','CALL',220.0,2);
+INSERT INTO "option_events" VALUES('17','synthetic_alpha','SYNTH_ORBIT','2040-01-23','PUT',230.0,2);
+INSERT INTO "option_events" VALUES('18','synthetic_alpha','SYNTH_ORBIT','2040-01-24','CALL',240.0,2);
+INSERT INTO "option_events" VALUES('19','synthetic_alpha','SYNTH_ORBIT','2040-01-25','PUT',250.0,2);
+INSERT INTO "option_events" VALUES('20','synthetic_alpha','SYNTH_ORBIT','2040-01-27','PUT',270.0,2);
+INSERT INTO "option_events" VALUES('21','synthetic_alpha','SYNTH_ORBIT','2040-01-28','CALL',280.0,2);
+INSERT INTO "option_events" VALUES('22','synthetic_alpha','SYNTH_ORBIT','2040-01-29','PUT',290.0,2);
+INSERT INTO "option_events" VALUES('23','synthetic_alpha','SYNTH_ORBIT','2040-01-30','CALL',300.0,2);
+INSERT INTO "option_events" VALUES('24','synthetic_alpha','SYNTH_ORBIT','2040-02-01','CALL',320.0,2);
+INSERT INTO "option_events" VALUES('25','synthetic_alpha','SYNTH_ORBIT','2040-02-02','PUT',330.0,2);
+INSERT INTO "option_events" VALUES('26','synthetic_alpha','SYNTH_ORBIT','2040-02-03','CALL',340.0,2);
+INSERT INTO "option_events" VALUES('27','synthetic_alpha','SYNTH_ORBIT','2040-02-04','PUT',350.0,2);
+INSERT INTO "option_events" VALUES('28','synthetic_alpha','SYNTH_ORBIT','2040-02-06','PUT',370.0,2);
+INSERT INTO "option_events" VALUES('29','synthetic_alpha','SYNTH_ORBIT','2040-02-07','CALL',380.0,2);
+INSERT INTO "option_events" VALUES('30','synthetic_alpha','SYNTH_ORBIT','2040-02-08','PUT',390.0,2);
+INSERT INTO "option_events" VALUES('31','synthetic_alpha','SYNTH_ORBIT','2040-02-09','CALL',400.0,2);
+INSERT INTO "option_events" VALUES('32','synthetic_alpha','SYNTH_ORBIT','2040-02-11','CALL',420.0,2);
+INSERT INTO "option_events" VALUES('33','synthetic_alpha','SYNTH_ORBIT','2040-02-12','PUT',430.0,2);
+INSERT INTO "option_events" VALUES('34','synthetic_alpha','SYNTH_ORBIT','2040-02-13','CALL',440.0,2);
+INSERT INTO "option_events" VALUES('35','synthetic_alpha','SYNTH_ORBIT','2040-02-14','PUT',450.0,2);
+INSERT INTO "option_events" VALUES('36','synthetic_alpha','SYNTH_ORBIT','2040-02-16','PUT',470.0,2);
+INSERT INTO "option_events" VALUES('37','synthetic_alpha','SYNTH_ORBIT','2040-02-17','CALL',480.0,2);
+INSERT INTO "option_events" VALUES('38','synthetic_alpha','SYNTH_ORBIT','2040-02-18','PUT',490.0,2);
+INSERT INTO "option_events" VALUES('39','synthetic_alpha','SYNTH_ORBIT','2040-02-19','CALL',500.0,2);
+INSERT INTO "option_events" VALUES('40','synthetic_alpha','SYNTH_ORBIT','2040-02-21','CALL',520.0,2);
+INSERT INTO "option_events" VALUES('41','synthetic_alpha','SYNTH_ORBIT','2040-02-22','PUT',530.0,2);
+INSERT INTO "option_events" VALUES('42','synthetic_alpha','SYNTH_ORBIT','2040-02-23','CALL',540.0,2);
+INSERT INTO "option_events" VALUES('43','synthetic_alpha','SYNTH_ORBIT','2040-02-24','PUT',550.0,2);
+INSERT INTO "option_events" VALUES('44','synthetic_alpha','SYNTH_ORBIT','2040-02-26','PUT',570.0,2);
+INSERT INTO "option_events" VALUES('45','synthetic_alpha','SYNTH_ORBIT','2040-02-27','CALL',580.0,2);
+INSERT INTO "option_events" VALUES('46','synthetic_alpha','SYNTH_ORBIT','2040-02-28','PUT',590.0,2);
+INSERT INTO "option_events" VALUES('47','synthetic_alpha','SYNTH_ORBIT','2040-02-29','CALL',600.0,2);
+COMMIT;
